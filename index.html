@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title"> 
+        <span class="temp-icon"><i class="fa-solid fa-temperature-three-quarters"></i></span>
+        <h1>Temperature Converter</h1>
+    </div>
+    <div class="container">
+        <div class="enterno">
+            <p>Value To Convert</p>
+            <input type="number" name="number" id="num" placeholder="Enter Here">
+        </div>
+        <div class="main1">
+            <div class="type">
+                <p>From</p>
+                <select id="temp">
+                    <option value="type" selected>choose the type</option>
+                    <option value="Celcius">Celcius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div class="outputtype">
+                <p>To</p>
+                <select id="temp1">
+                    <option value="type" selected>choose the type</option>
+                    <option value="Celcius" >Celcius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <div class="result">
+            <p>Result</p>
+            <input type="text" value="" id="result" placeholder="0.00">
+        </div>
+        <div class="main2">
+            <div class="button">
+                <button onclick="convert()">Convert</button>
+            </div>
+            <div class="button">
+                <button id="btn" onclick="reset()">Clear</button>
+            </div>
+        </div>
+        <script src="codes.js"></script>
+</body>
+</html>
